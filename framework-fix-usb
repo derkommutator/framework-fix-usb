@@ -32,7 +32,7 @@ echo "Device IDs: ${DEVICE_IDS[@]}"
 
 # for every device, echo it into $SCAN_PATH/unbind and then into $SCAN_PATH/bind
 for device_id in "${DEVICE_IDS[@]}"; do
-    sudo echo "$device_id" > "$SCAN_PATH/unbind"
-    sudo echo "$device_id" > "$SCAN_PATH/bind"
+    echo "$device_id" > "$SCAN_PATH/unbind"
+    echo "$device_id" > "$SCAN_PATH/bind"
 done
 echo "USB devices re-bound successfully."
